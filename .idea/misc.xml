@@ -5,7 +5,8 @@
       <map>
         <entry key="..\:/test-task/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/test-task/app/src/main/res/layout/fragment_number_detail.xml" value="0.1" />
-        <entry key="..\:/test-task/app/src/main/res/layout/fragment_numbers.xml" value="0.1" />
+        <entry key="..\:/test-task/app/src/main/res/layout/fragment_numbers.xml" value="0.33" />
+        <entry key="..\:/test-task/app/src/main/res/layout/item_number.xml" value="0.5208333333333334" />
       </map>
     </option>
   </component>

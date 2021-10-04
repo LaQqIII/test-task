@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">number test task</string>
+    <string name="app_name" translatable="false">number test task</string>
+    <string name="number">Число</string>
+    <string name="numberIs" translatable="false">Number %1s</string>
 </resources>
