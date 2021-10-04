@@ -1,4 +1,4 @@
-package com.example.numbertesttask.ui.screens.numbers
+package com.example.numbertesttask.ui
 
 import androidx.fragment.app.Fragment
 import com.example.numbertesttask.R

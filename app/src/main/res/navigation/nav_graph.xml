@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/numbersFragment"
-        android:name="com.example.numbertesttask.ui.screens.numbers.NumbersFragment"
+        android:name="com.example.numbertesttask.ui.NumbersFragment"
         android:label="NumbersFragment">
         <action
             android:id="@+id/action_numbersFragment_to_numberDetailFragment"
@@ -14,7 +14,11 @@
     </fragment>
     <fragment
         android:id="@+id/numberDetailFragment"
-        android:name="com.example.numbertesttask.ui.screens.numbers.NumberDetailFragment"
-        android:label="NumberDetailFragment" />
+        android:name="com.example.numbertesttask.ui.NumberDetailFragment"
+        android:label="NumberDetailFragment" >
+        <argument
+            android:name="number"
+            app:argType="integer" />
+    </fragment>
 
 </navigation>
