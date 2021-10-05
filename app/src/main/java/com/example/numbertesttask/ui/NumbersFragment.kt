@@ -65,7 +65,13 @@ class NumbersFragment : Fragment(R.layout.fragment_numbers) {
     }
 
     private fun handleFailure(failure: String?) {
-
+        viewBinding?.let {
+            with(it) {
+                numbersRecyclerView.visibility = View.GONE
+                failureTextView.text = failure
+                failureTextView.visibility = View.VISIBLE
+            }
+        }
     }
 
     private fun showNumberDetailFragment(number: Number) {
@@ -77,4 +83,5 @@ class NumbersFragment : Fragment(R.layout.fragment_numbers) {
     private fun addNumber() {
         numbersViewModel.addRandomNumbers()
     }
+
 }

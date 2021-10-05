@@ -3,4 +3,5 @@
     <dimen name="item_number_height">100dp</dimen>
     <dimen name="item_number_textSize">20sp</dimen>
     <dimen name="floatingActionButton_layout_margin">16dp</dimen>
+    <dimen name="failure_textSize">20sp</dimen>
 </resources>
