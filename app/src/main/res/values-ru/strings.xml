@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="number">Число</string>
+    <string name="numberIs">Число %1s</string>
+    <string name="numberIsEven">Число четное</string>
+    <string name="numberIsOdd">Число нечетное</string>
+</resources>

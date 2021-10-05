@@ -24,14 +24,14 @@ class NumbersViewModel @Inject constructor(
     val failure: LiveData<String> = _failure
 
     fun loadNumbers() = viewModelScope.launch {
-        when (val result = getNumbers.run()) {
+        when (val result = getNumbers()) {
             is Result.Success -> _numbers.value = result.data
             is Result.Error -> _failure.value = result.exception.message
         }
     }
 
     fun addRandomNumbers() = viewModelScope.launch {
-        when (val result = addNumbers.run()) {
+        when (val result = addNumbers()) {
             is Result.Success -> _numbers.value = result.data
             is Result.Error -> _failure.value = result.exception.message
         }

@@ -4,4 +4,8 @@
     <dimen name="item_number_textSize">20sp</dimen>
     <dimen name="floatingActionButton_layout_margin">16dp</dimen>
     <dimen name="failure_textSize">20sp</dimen>
+    <dimen name="detail_number_textSize">28sp</dimen>
+    <dimen name="detail_numberIsEven_textSize">24sp</dimen>
+    <dimen name="base_vertical_margin">8dp</dimen>
+    <dimen name="addNumber_button_size">50dp</dimen>
 </resources>
