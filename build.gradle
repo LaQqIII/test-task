@@ -3,6 +3,8 @@ buildscript {
     ext {
         navVersion = "2.3.5"
         hiltVersion = "2.38.1"
+        coroutineVersion = "1.5.2"
+        roomVersion = "2.3.0"
     }
     repositories {
         google()

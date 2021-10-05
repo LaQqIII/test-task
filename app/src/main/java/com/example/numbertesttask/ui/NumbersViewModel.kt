@@ -4,7 +4,8 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.numbertesttask.data.Number
-import com.example.numbertesttask.data.repository.NumbersRepository
+import com.example.numbertesttask.data.Result
+import com.example.numbertesttask.data.database.NumberDao
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 
@@ -28,6 +29,17 @@ class NumbersViewModel @Inject constructor(
     }
 }
 
-class GetNumbers @Inject constructor(numbersRepository: NumbersRepository)
+interface GetNumbers {
+    suspend operator fun invoke(): Result<List<Number>>
+}
 
-class AddNumbers @Inject constructor(numbersRepository: NumbersRepository)
+class GetNumbersImpl(private val localDatabase: NumberDao) : GetNumbers {
+    override suspend fun invoke(): Result<List<Number>> {
+        localDatabase.getAllNumbers()
+        return Result.Success(emptyList())
+    }
+}
+
+interface AddNumbers {
+    operator fun invoke()
+}
